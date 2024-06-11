@@ -27,3 +27,10 @@ function updateDots(){
     dots.forEach(dot => dot.classList.remove('active'));
     dots[currentIndex].classList.add('active')
 }
+
+let autoSlide = setInterval(() => moveSlide(1), 3000 );
+
+document.querySelector('.carousel').addEventListener('mouseover', () => clearInterval(autoSlide));
+document.querySelector('.carousel').addEventListener('mouseout', () => autoSlide = setInterval(() => moveSlide(1), 3000));
+
+showSlide(currentIndex);
