@@ -1,7 +1,7 @@
 
 let currentIndex = 0;
-const items = document.querySelector('.carousel-item');
-const dots = document.querySelector ('.dot');
+const items = document.querySelectorAll('.carousel-item');
+const dots = document.querySelectorAll ('.dot');
 
 function showSlide(index) {
     if (index >= items.length){
@@ -14,7 +14,7 @@ function showSlide(index) {
         currentIndex = index;
     }
     const offset = -currentIndex * 100;
-    document.querySelector('.carousel-inner').style.trasform = `translateX(${offset})`;
+    document.querySelector('.carousel-inner').style.transform = `translateX(${offset})`;
     updateDots();
 }
 function moveSlide(step){
