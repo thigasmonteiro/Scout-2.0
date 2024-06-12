@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #ffffff;
+    background-color: #f4f4f4;
 }
 
 header {
@@ -118,8 +118,8 @@ nav a:hover {
 
 .carousel {
     position: relative;
-    width: 80%;
-    max-width: 600px;
+    width: 100%;
+    max-width: 90%;
     margin: 20px auto;
     overflow: hidden;
     border-radius: 10px;
@@ -138,6 +138,7 @@ nav a:hover {
     width: 100%;
     display: block;
     border-radius: 10px;
+    
 }
 .prev, .next {
     position: absolute;
@@ -149,10 +150,10 @@ nav a:hover {
     padding: 10px;
     cursor: pointer;
     z-index: 100;
-    border-radius: 50%;
+    border-radius: 100%;
 }
 .prev{
-    left: 10px;
+    left: 30px;
 }
 .next {
     right: 10px;
@@ -176,5 +177,51 @@ nav a:hover {
     cursor: pointer;
 }
 .dot.active {
-    background-color: #717171;
+    background-color: #0f0f0f;
+}
+
+/* SECTION */
+
+.section-container {
+    padding: 20px;
+    border: solid 2px black;
+    width: 100%;
+    max-width: 80%;
+    margin: auto;
+}
+
+.title-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.title {
+    font-size: 24px;
+    text-align: center;
+}
+
+.content-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.text-container {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.text {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.section-image {
+    flex: 0 0 auto;
+}
+
+.section-image img {
+    max-width: 200px;
+    height: auto;
 }

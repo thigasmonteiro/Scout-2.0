@@ -14,7 +14,7 @@ function showSlide(index) {
         currentIndex = index;
     }
     const offset = -currentIndex * 100;
-    document.querySelector('.carousel-inner').style.transform = `translateX(${offset})`;
+    document.querySelector('.carousel-inner').style.transform = `translateX(${offset}%)`;
     updateDots();
 }
 function moveSlide(step){
